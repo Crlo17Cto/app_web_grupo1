@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularios html</title>
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form accept="#" method="post">
+            <div><!--ingresar texto-->
+                <label>Primer nombre:</label>
+                <input type="text" name="primerNombre" maxlength="10"
+                placeholder="Ingrece su primer nombre"
+                value="juan"
+                readonly/>
+                <!--campo obligatorio se usa: required-->
+                <!--readonly es para leer el input de escritura no se puede borrar ni nda-->
+            </div>
+            <br>
+            <div><!--Ingresar contraseña-->
+                <label> Contraseña</label>
+                <input type="password" name="pwd"/>
+            </div>
+            <br>
+            <div>
+                <label>Edad</label> <!--Ingresar numeros edad!-->
+                <input type="number" name="edad" min="1" max="120">
+            </div>
+            <br>
+            <div><!--Ingresar email-->
+                <label> Email</label>
+                <input type="email" name="email" placeholder="example@email.com"/>
+            </div>
+            <br>
+            <div><!--Ingresar archivo-->
+                <label>Archivo</label>
+                <input type="file" name="archivo" multiple/>
+            </div>
+            <br>
+            <div><!--Ingresar Color-->
+                <label>Color</label>
+                <input type="color" name="color"/>
+            </div>
+            <br>
+            <div><!--Ingresar Fecha-->
+                <label> Contraseña</label>
+                <input type="date" name="fecha"/>
+            </div>
+            <br>
+            <div><!--Ingresar Fecha hora-->
+                <label> Fecha hora</label>
+                <input type="datetime-lcoal" name="fechaHora"/>
+            </div>
+            <br>
+            <div><!--Ingresar Combo box-->
+                <label>Ciudad</label>
+                <select name="ciudad">
+                    <option value="">Seleccione una ciudad</option>
+                    <option value="1">Tunja</option>
+                    <option value="2">Duitama</option>
+                    <option value="3">Sogamoso</option> <!--selecionar cual sale de primeras-->
+                </select>
+            </div>
+            <div>
+                <label>Estado civil</label>
+                <label>
+                    <input type="radio" name="estadoCivil" value="a">
+                    Soltero/a
+                </label>
+                <label>
+                    <input type="radio" name="estadoCivil" value="b">
+                    Casado/a
+                <label>
+                    <input type="radio" name="estadoCivil" value="c" checked>
+                    Ninguno
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Pasatiempos</label>
+                <label>
+                    <input type="checkbox" name="deportes">
+                    Deportes
+                </label>
+                <label>
+                    <input type="checkbox" name="Videojuegos">
+                    Videojuegos
+                </label>
+                <label>
+                    <input type="checkbox" name="Lecturas" checked>
+                    Lecturas
+                </label>
+            </div>
+            <br>
+            <div>
+                <label>Justifique</label>
+                <textarea name="justifique" rows="10" cols="35">aaaaaaa</textarea>
+            </div>
+            <br>
+            <div>
+                <input type="button" value="Botón">
+                <button disabled>Botón</button>
+            </div>
+            <br>
+            <div>
+                <input type="reset" value="Limpiar">
+                <button type="reset">Limpiar</button>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>
